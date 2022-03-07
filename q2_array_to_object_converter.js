@@ -2,8 +2,15 @@
 	based on a given key */
 
 
-const convert = () => {
-	// Write your code here
+const convert = (arr,id) => {
+	let obj = {};
+	if(!id){
+		return null;
+	}
+	for(let val of arr){
+		obj[val[id]] = val;
+	}
+	return obj;
 };
 
 /* For example,
